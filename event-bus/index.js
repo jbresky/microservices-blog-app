@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-const { default: App } = require('../client/src/App');
 
 const app = express();
 
@@ -17,5 +16,5 @@ app.post('/events', (req, res) => {
     res.send({ status: 'OK' });
 })
 
-app.listen(4005, () => console.log('listening on 4050'));
+app.listen(4005, () => console.log('listening on 4005'));
 
